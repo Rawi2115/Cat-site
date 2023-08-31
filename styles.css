@@ -81,9 +81,9 @@ body {
   display: flex;
   flex-direction: inherit;
   margin-bottom: 1rem;
-  background: #eeb6d9;
+  background: #EFC5B7;
   color:#865457;
-  box-shadow: 0.8rem 0.8rem #d9b4b6;
+  box-shadow: 0.8rem 0.8rem #865457;
 }
 li {
   list-style: none;
