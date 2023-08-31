@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600;800&display=swap');
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+ picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+body {
+  min-height: 100vh;
+  background:#eeddde ;
+  font-family: 'Alegreya',sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:1rem
+}
+.header {
+  text-align: center;
+}
+.header .month {
+  color:#a65458;
+}
+.img-wrapper {
+  border: 0.15rem solid #865457;
+  border-radius: 50%;
+  object-fit:cover ;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  align-self: center;
+}
+.avatar {
+  object-fit:cover;
+  width: 100%;
+}
+.card-wrapper {
+  border-radius: 0.5rem;
+  max-width: 400px;
+  margin-inline: 1.3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: inherit;
+  margin-bottom: 1rem;
+  background: #eeb6d9;
+  color:#865457;
+  box-shadow: 0.8rem 0.8rem #d9b4b6;
+}
+li {
+  list-style: none;
+}
+.c {
+  font-weight: 700;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.soc {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 0;
+}
+.description {
+  padding: 0.3rem;
+  letter-spacing: 1px;
+}
+@media (min-width:377px) {
+ .card-wrapper{box-shadow: 1rem 1.5rem #d9b4b6;}
+}
+header {
+  background: rgb(226, 65, 65);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius:1rem ;
+  border-bottom-right-radius:1rem ;
+}
+header h1 {
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+.prod {
+  gap: 1rem;
+}
+.items {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.corp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:760px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    max-width: 60rem;
+  }
+  .corp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 1px;
+    gap:1rem;
+    align-self: fle;
+  }
+  .prod {
+    justify-content: center;
+  }
+}
